@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#d8ceb9"/>
+  <path d="M54 672 144 104 580 48 1102 130 1148 650 760 724Z" fill="#d7c886" stroke="#2f3427" stroke-width="9"/>
+  <g fill="#576b46">
+    <circle cx="202" cy="164" r="34"/><circle cx="244" cy="138" r="27"/><circle cx="280" cy="184" r="30"/>
+    <circle cx="968" cy="208" r="38"/><circle cx="1012" cy="244" r="30"/><circle cx="920" cy="254" r="26"/>
+    <circle cx="310" cy="606" r="34"/><circle cx="354" cy="642" r="28"/><circle cx="412" cy="618" r="32"/>
+    <circle cx="744" cy="558" r="34"/><circle cx="786" cy="594" r="28"/>
+  </g>
+  <path d="M228 604 C360 528 482 488 604 492 C734 496 860 422 1032 312" fill="none" stroke="#8c9a66" stroke-width="46" stroke-linecap="round" opacity=".68"/>
+  <path d="M174 164 C330 236 484 260 626 236 C760 214 864 220 1002 240" fill="none" stroke="#8c9a66" stroke-width="34" stroke-linecap="round" opacity=".56"/>
+  <g fill="#f0e6c8" opacity=".65">
+    <path d="M118 350 C260 296 400 308 536 356 C398 420 248 430 118 350Z"/>
+    <path d="M666 130 C794 96 930 114 1062 176 C934 218 794 210 666 130Z"/>
+  </g>
+  <text x="76" y="78" fill="#3b382f" font-family="Segoe UI, Arial" font-size="34" font-weight="700">Existing Vegetation Placeholder</text>
+  <text x="78" y="124" fill="#6f6758" font-family="Segoe UI, Arial" font-size="22">Replace with canopy, recruitment and pasture condition mapping</text>
+</svg>

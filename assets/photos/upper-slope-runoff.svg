@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+  <rect width="900" height="620" fill="#d8cfbd"/>
+  <path d="M0 440 C210 350 420 340 900 238 L900 620 L0 620Z" fill="#c9b874"/>
+  <path d="M0 310 C230 230 480 210 900 130 L900 0 L0 0Z" fill="#8f7a56" opacity=".45"/>
+  <g stroke="#a86d4d" stroke-width="8" fill="none" opacity=".9">
+    <path d="M90 438 C245 378 390 360 560 370"/>
+    <path d="M120 492 C330 420 500 410 732 430"/>
+  </g>
+  <g stroke="#527f8a" stroke-width="9" fill="none" stroke-linecap="round">
+    <path d="M582 176 C542 290 524 370 484 500"/>
+    <path d="M692 150 C650 290 642 398 592 574"/>
+  </g>
+  <circle cx="744" cy="176" r="34" fill="#596b45"/>
+  <circle cx="782" cy="198" r="24" fill="#596b45"/>
+  <text x="42" y="70" fill="#312f29" font-family="Segoe UI, Arial" font-size="34" font-weight="700">Site photo placeholder A</text>
+  <text x="42" y="112" fill="#6f6758" font-family="Segoe UI, Arial" font-size="22">Upper slope runoff source</text>
+</svg>

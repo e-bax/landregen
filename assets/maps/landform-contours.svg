@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#d9cfba"/>
+  <path d="M20 620 C230 510 340 408 502 414 C714 422 804 284 1188 212 L1200 760 L0 760Z" fill="#d2b36d" opacity=".72"/>
+  <path d="M0 210 C180 166 318 112 505 132 C725 155 862 94 1200 54 L1200 0 L0 0Z" fill="#9b7052" opacity=".62"/>
+  <g fill="none" stroke="#6f5b49" stroke-width="5" opacity=".75">
+    <path d="M-20 610 C202 514 320 406 500 414 C710 424 822 294 1220 212"/>
+    <path d="M-20 548 C182 468 330 356 512 370 C726 386 834 248 1220 170"/>
+    <path d="M-20 486 C180 416 350 310 526 322 C744 338 850 202 1220 128"/>
+    <path d="M-20 424 C182 366 365 266 542 276 C762 288 864 158 1220 86"/>
+    <path d="M-20 362 C188 316 384 224 560 230 C780 238 880 118 1220 50"/>
+    <path d="M-20 300 C196 266 408 184 580 186 C796 188 900 86 1220 18"/>
+  </g>
+  <path d="M178 612 C325 520 452 470 596 468 C742 466 858 372 1015 302" fill="none" stroke="#a36d4d" stroke-width="10" stroke-dasharray="30 18"/>
+  <text x="76" y="78" fill="#3b382f" font-family="Segoe UI, Arial" font-size="34" font-weight="700">Landform + Contours Placeholder</text>
+  <text x="78" y="124" fill="#6f6758" font-family="Segoe UI, Arial" font-size="22">Replace with contour export and interpreted keyline geometry</text>
+</svg>
