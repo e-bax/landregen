@@ -3,271 +3,223 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landscape Regeneration Assessment</title>
+    <title>Muckleford Land Regeneration</title>
+    <meta
+      name="description"
+      content="Tree planting, contour ripping, revegetation, erosion repair, and practical property regeneration across Muckleford and surrounding Central Victoria."
+    >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main id="report" class="report" aria-label="Landscape Regeneration Assessment report"></main>
-    <script src="report-data.js"></script>
-    <script>
-      const data = window.reportData;
-      const report = document.getElementById("report");
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Muckleford Land Regeneration</span>
+      </a>
+      <nav>
+        <a href="assessment.html">Assessment</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-      const el = (tag, className, text) => {
-        const node = document.createElement(tag);
-        if (className) node.className = className;
-        if (text !== undefined) node.textContent = text;
-        return node;
-      };
+    <main id="top">
+      <section class="hero section-theme" data-theme="charcoal">
+        <img
+          class="hero-image"
+          src="assets/hero-landscape.png"
+          alt="Dry Central Victorian paddock with contour ripping and revegetation rows."
+        >
+        <div class="hero-scrim"></div>
+        <div class="contour contour-hero" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="kicker">Muckleford and Central Victoria</p>
+          <h1>Land regeneration for dry Central Victorian landscapes</h1>
+          <p class="hero-subtext">
+            Tree planting, contour ripping, revegetation, erosion repair, and practical property regeneration across Muckleford and surrounding Central Victoria.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="#contact">Discuss your property</a>
+            <a class="button button-secondary" href="#services">View services</a>
+          </div>
+        </div>
+      </section>
 
-      const page = (className = "") => {
-        const section = el("section", `page ${className}`.trim());
-        report.append(section);
-        return section;
-      };
+      <section class="intro section section-theme" data-theme="offwhite">
+        <div class="intro-grid">
+          <div class="eyebrow-block reveal">
+            <p class="kicker">Reading the land first</p>
+            <h2>Practical work starts with how the site behaves.</h2>
+          </div>
+          <div class="intro-copy reveal">
+            <p>
+              Before any works begin, the land is read as a whole system: slope, soil, water movement, compaction, existing vegetation, exposure, grazing pressure, and landholder goals.
+            </p>
+            <p>
+              The aim is to match the work to the place, so planting, ripping, drainage repair, and follow-up are grounded in what will actually establish in a dry Central Victorian landscape.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      const header = (parent, kicker, title, intro) => {
-        const block = el("header", "section-header");
-        block.append(el("p", "kicker", kicker));
-        block.append(el("h2", "", title));
-        if (intro) block.append(el("p", "section-intro", intro));
-        parent.append(block);
-      };
+      <section class="plan-section section section-theme" data-theme="offwhite">
+        <div class="plan-grid">
+          <div class="map-panel reveal" aria-hidden="true">
+            <div class="map-line map-line-one"></div>
+            <div class="map-line map-line-two"></div>
+            <div class="map-line map-line-three"></div>
+            <div class="map-zone map-zone-one"></div>
+            <div class="map-zone map-zone-two"></div>
+            <div class="map-label">slope</div>
+            <div class="map-label map-label-two">flow</div>
+          </div>
+          <div class="plan-copy reveal">
+            <p class="kicker">Landscape Regeneration Assessment</p>
+            <h2>Start with a plan</h2>
+            <p>Most properties contain more opportunities than can realistically be addressed at once.</p>
+            <p>
+              A Landscape Regeneration Assessment helps identify where to begin, what can wait, and which actions are likely to provide the greatest benefit.
+            </p>
+            <p>
+              Rather than starting with a quote for tree planting or earthworks, the assessment develops a staged understanding of the property and produces practical recommendations tailored to the landscape.
+            </p>
+            <a class="button button-earth" href="assessment.html">View Assessment Service</a>
+          </div>
+        </div>
+      </section>
 
-      const footer = (parent) => {
-        const f = el("footer", "page-footer");
-        f.append(el("span", "", data.business.name));
-        const pageNumber = Array.from(report.children).indexOf(parent) + 1;
-        f.append(el("span", "", `${data.report.footerText} | Page ${pageNumber}`));
-        parent.append(f);
-      };
+      <section id="services" class="section services section-theme" data-theme="straw">
+        <div class="section-heading reveal">
+          <p class="kicker">Services</p>
+          <h2>Planning and implementation for working blocks, lifestyle properties, and degraded paddocks.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card service-card-feature reveal">
+            <span class="service-number">Core service</span>
+            <h3>Landscape Regeneration Assessment</h3>
+            <p>A paid planning service that identifies priority opportunities, staged recommendations, and the implementation work that should follow.</p>
+            <a href="assessment.html">View Assessment Service</a>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <h3>Tree planting and revegetation</h3>
+            <p>Species selection, layout, guards, establishment timing, and practical revegetation for exposed dryland sites.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <h3>Deep ripping on contour</h3>
+            <p>Contour-aligned ripping to slow runoff, open compacted ground, and support planting where the site allows.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <h3>Erosion and water flow repair</h3>
+            <p>Small-scale interventions to spread flow, stabilise vulnerable areas, and reduce further soil loss.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <h3>Property regeneration planning</h3>
+            <p>Clear priorities for staged works, access, grazing pressure, water movement, and long-term property goals.</p>
+          </article>
+          <article class="service-card service-card-wide reveal">
+            <span class="service-number">05</span>
+            <h3>Establishment and follow-up</h3>
+            <p>Checking survival, guards, weeds, browsing pressure, moisture, and the next practical step after initial works.</p>
+          </article>
+        </div>
+      </section>
 
-      const paragraphList = (items) => {
-        const div = el("div", "prose");
-        items.forEach((item) => div.append(el("p", "", item)));
-        return div;
-      };
+      <section id="process" class="process section section-theme" data-theme="clay">
+        <div class="contour contour-process" aria-hidden="true"></div>
+        <div class="section-heading reveal">
+          <p class="kicker">Process</p>
+          <h2>A simple sequence that keeps the work tied to the site.</h2>
+        </div>
+        <div class="process-list">
+          <article class="process-step reveal">
+            <span>1</span>
+            <div>
+              <h3>Site walk</h3>
+              <p>Walk the property, read slope and water movement, and identify practical constraints.</p>
+            </div>
+          </article>
+          <article class="process-step reveal">
+            <span>2</span>
+            <div>
+              <h3>Practical plan</h3>
+              <p>Set priorities, staging, species, access, timing, and follow-up requirements.</p>
+            </div>
+          </article>
+          <article class="process-step reveal">
+            <span>3</span>
+            <div>
+              <h3>Implementation</h3>
+              <p>Carry out the agreed work with attention to soil condition, weather, and establishment needs.</p>
+            </div>
+          </article>
+          <article class="process-step reveal">
+            <span>4</span>
+            <div>
+              <h3>Establishment review</h3>
+              <p>Review survival, erosion response, water behaviour, and what needs adjusting next.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      const statGrid = (items) => {
-        const grid = el("div", "stat-grid");
-        items.forEach((item) => {
-          const card = el("article", "stat-card");
-          card.append(el("span", "stat-label", item.label));
-          card.append(el("strong", "", item.value));
-          if (item.note) card.append(el("small", "", item.note));
-          grid.append(card);
-        });
-        return grid;
-      };
+      <section id="projects" class="projects section section-theme" data-theme="grey">
+        <div class="section-heading reveal">
+          <p class="kicker">Projects preview</p>
+          <h2>Before, during, and after views of practical regeneration work.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <img src="assets/project-before.png" alt="Eroded dry paddock area before repair.">
+            <div>
+              <p class="project-stage">Before</p>
+              <h3>Exposed flow line</h3>
+              <p>Reading where water concentrates, where soil is leaving, and what can be stabilised first.</p>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="assets/project-during.png" alt="Contour rip lines and young tree guards during regeneration work.">
+            <div>
+              <p class="project-stage">During</p>
+              <h3>Contour preparation</h3>
+              <p>Ripping, placement, and planting layout shaped by slope, access, and dryland establishment.</p>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="assets/project-after.png" alt="Young native revegetation establishing after regeneration works.">
+            <div>
+              <p class="project-stage">After</p>
+              <h3>Establishment check</h3>
+              <p>Following up survival, browsing pressure, weeds, and whether water is moving more gently.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      const callout = (title, body) => {
-        const box = el("aside", "callout");
-        box.append(el("h3", "", title));
-        box.append(el("p", "", body));
-        return box;
-      };
+      <section id="contact" class="contact section section-theme" data-theme="olive">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="kicker">Contact</p>
+            <h2>Tell us about your property.</h2>
+          </div>
+          <p>
+            Tell us about your property, what you are hoping to improve, and where you are located. Photos, maps, or a short description are useful.
+          </p>
+          <a class="button button-primary" href="mailto:hello@example.com?subject=Property%20regeneration%20enquiry">Discuss your property</a>
+        </div>
+      </section>
+    </main>
 
-      const mapPanel = (map) => {
-        const figure = el("figure", `map-panel ${map.size || ""}`.trim());
-        const wrap = el("div", "map-image-wrap");
-        const img = el("img", "map-image");
-        img.src = map.src;
-        img.alt = map.alt;
-        wrap.append(img);
+    <footer class="site-footer">
+      <p>Muckleford Land Regeneration</p>
+      <p>Practical land repair and revegetation across Muckleford and surrounding Central Victoria.</p>
+    </footer>
 
-        const legend = el("div", "map-legend");
-        legend.append(el("strong", "", "Legend"));
-        map.legend.forEach((item) => {
-          const row = el("span", "legend-item");
-          const swatch = el("i", "");
-          swatch.style.background = item.color;
-          row.append(swatch, document.createTextNode(item.label));
-          legend.append(row);
-        });
-
-        wrap.append(legend);
-        figure.append(wrap);
-        const caption = el("figcaption", "");
-        caption.append(el("strong", "", map.title));
-        caption.append(document.createTextNode(` ${map.caption}`));
-        figure.append(caption);
-        return figure;
-      };
-
-      const twoColumnList = (items) => {
-        const grid = el("div", "two-column-list");
-        items.forEach((item) => {
-          const block = el("article", "");
-          block.append(el("h3", "", item.title));
-          block.append(el("p", "", item.body));
-          grid.append(block);
-        });
-        return grid;
-      };
-
-      const worksTable = (rows) => {
-        return dataTable(["Recommended work", "Purpose", "Priority"], rows, ["work", "purpose", "priority"]);
-      };
-
-      const dataTable = (headers, rows, keys) => {
-        const table = el("table", "report-table compact-table");
-        const thead = el("thead");
-        const headRow = el("tr");
-        headers.forEach((h) => headRow.append(el("th", "", h)));
-        thead.append(headRow);
-        table.append(thead);
-        const tbody = el("tbody");
-        rows.forEach((row) => {
-          const tr = el("tr");
-          keys.forEach((key) => tr.append(el("td", "", row[key])));
-          tbody.append(tr);
-        });
-        table.append(tbody);
-        return table;
-      };
-
-      const photoGrid = (items) => {
-        const grid = el("div", "photo-grid");
-        items.forEach((item) => {
-          const card = el("article", "photo-card");
-          const img = el("img", "");
-          img.src = item.src;
-          img.alt = item.alt;
-          card.append(img);
-          card.append(el("h3", "", item.title));
-          ["observed", "interpretation", "response"].forEach((key) => {
-            const row = el("p", "");
-            row.append(el("strong", "", `${item.labels[key]} `));
-            row.append(document.createTextNode(item[key]));
-            card.append(row);
-          });
-          grid.append(card);
-        });
-        return grid;
-      };
-
-      const budgetOptions = (items) => {
-        const grid = el("div", "budget-grid");
-        items.forEach((item) => {
-          const card = el("article", "budget-card");
-          card.append(el("p", "budget-tier", item.tier));
-          card.append(el("h3", "", item.title));
-          card.append(el("strong", "budget-total", item.range));
-          const ul = el("ul", "");
-          item.includes.forEach((include) => ul.append(el("li", "", include)));
-          card.append(ul);
-          grid.append(card);
-        });
-        return grid;
-      };
-
-      const cover = page("cover");
-      const coverTop = el("div", "cover-top");
-      coverTop.append(el("p", "business-positioning", data.business.positioning));
-      coverTop.append(el("p", "report-type", data.report.type));
-      cover.append(coverTop);
-      const coverTitle = el("div", "cover-title");
-      coverTitle.append(el("h1", "", data.report.title));
-      coverTitle.append(el("p", "property-name", data.property.name));
-      coverTitle.append(el("p", "property-location", `${data.property.location} | ${data.report.date}`));
-      cover.append(coverTitle);
-      cover.append(mapPanel(data.maps.find((m) => m.id === "concept")));
-      const prepared = el("div", "prepared-for");
-      prepared.append(el("span", "", "Prepared for"));
-      prepared.append(el("strong", "", data.client.name));
-      prepared.append(el("span", "", data.business.name));
-      cover.append(prepared);
-
-      const summary = page();
-      header(summary, "01 / Executive summary", "Plan snapshot", data.sections.executiveSummary.intro);
-      summary.append(statGrid(data.sections.executiveSummary.stats));
-      summary.append(callout("Overall recommendation", data.sections.executiveSummary.recommendation));
-      summary.append(twoColumnList(data.sections.executiveSummary.findings));
-      footer(summary);
-
-      const overview = page();
-      header(overview, "02 / Property overview", "Site context and assessment basis", data.sections.propertyOverview.intro);
-      overview.append(mapPanel(data.maps.find((m) => m.id === "overview")));
-      overview.append(statGrid(data.sections.propertyOverview.stats));
-      overview.append(paragraphList(data.sections.propertyOverview.notes));
-      footer(overview);
-
-      const condition = page();
-      header(condition, "03 / Existing landscape condition", "Current function, constraints and observed pressures", data.sections.condition.intro);
-      condition.append(twoColumnList(data.sections.condition.items));
-      condition.append(callout("Condition rating", data.sections.condition.rating));
-      footer(condition);
-
-      const photos = page();
-      header(photos, "04 / Annotated site photos", "Observed condition, interpretation and practical response", data.sections.photos.intro);
-      photos.append(photoGrid(data.sections.photos.items));
-      footer(photos);
-
-      const vegetationCondition = page();
-      header(vegetationCondition, "05 / Vegetation condition", "Observed structure and likely reference vegetation", data.sections.vegetationCondition.intro);
-      vegetationCondition.append(mapPanel(data.maps.find((m) => m.id === "vegetation")));
-      vegetationCondition.append(twoColumnList(data.sections.vegetationCondition.items));
-      vegetationCondition.append(callout("Likely EVC / reference vegetation", data.sections.vegetationCondition.evcNote));
-      footer(vegetationCondition);
-
-      const water = page();
-      header(water, "06 / Landform and water movement", "Reading the landscape before prescribing works", data.sections.water.intro);
-      const mapGrid = el("div", "map-grid");
-      mapGrid.append(mapPanel(data.maps.find((m) => m.id === "landform")));
-      mapGrid.append(mapPanel(data.maps.find((m) => m.id === "water")));
-      water.append(mapGrid);
-      water.append(twoColumnList(data.sections.water.items));
-      footer(water);
-
-      const ripping = page();
-      header(ripping, "07 / Proposed ripping zones", "Where to rip, why, when and at what approximate scale", data.sections.ripping.intro);
-      ripping.append(mapPanel(data.maps.find((m) => m.id === "concept")));
-      ripping.append(dataTable(["Zone", "Area", "Purpose", "Priority", "Timing", "Notes"], data.sections.ripping.rows, ["zone", "area", "purpose", "priority", "timing", "notes"]));
-      footer(ripping);
-
-      const planting = page();
-      header(planting, "08 / Proposed planting zones", "Functional revegetation treatments by location", data.sections.planting.intro);
-      planting.append(mapPanel(data.maps.find((m) => m.id === "vegetation")));
-      planting.append(dataTable(["Zone", "Treatment", "Area/length", "Purpose", "Establishment notes"], data.sections.planting.rows, ["zone", "treatment", "scale", "purpose", "notes"]));
-      footer(planting);
-
-      const species = page();
-      header(species, "09 / Species recommendations", "Central Victorian species palette by planting zone", data.sections.species.intro);
-      species.append(dataTable(["Planting zone", "Canopy", "Mid-storey", "Ground layer / notes"], data.sections.species.rows, ["zone", "canopy", "mid", "ground"]));
-      species.append(callout("Species selection note", data.sections.species.note));
-      footer(species);
-
-      const works = page();
-      header(works, "10 / Recommended works", "Contractor-ready works package", data.sections.works.intro);
-      works.append(worksTable(data.sections.works.rows));
-      works.append(callout("Delivery note", data.sections.works.note));
-      footer(works);
-
-      const budget = page();
-      header(budget, "11 / Indicative quantities and costing", "Scalable investment pathways and approximate quantities", data.sections.budget.intro);
-      budget.append(dataTable(["Item", "Indicative quantity", "Unit allowance", "Indicative cost"], data.sections.budget.quantities, ["item", "quantity", "unit", "cost"]));
-      budget.append(budgetOptions(data.sections.budget.options));
-      budget.append(paragraphList(data.sections.budget.notes));
-      footer(budget);
-
-      const staging = page();
-      header(staging, "12 / Staged works program", "Suggested order of works", data.sections.staging.intro);
-      const timeline = el("ol", "timeline");
-      data.sections.staging.steps.forEach((step) => {
-        const item = el("li", "");
-        item.append(el("span", "", step.phase));
-        item.append(el("h3", "", step.title));
-        item.append(el("p", "", step.body));
-        timeline.append(item);
-      });
-      staging.append(timeline);
-      footer(staging);
-
-      const next = page();
-      header(next, "13 / Next steps", "From plan to implementation", data.sections.nextSteps.intro);
-      next.append(twoColumnList(data.sections.nextSteps.items));
-      next.append(callout("Recommended immediate action", data.sections.nextSteps.action));
-      footer(next);
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
